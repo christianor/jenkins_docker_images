@@ -5,9 +5,6 @@ ENV MAVEN_OPTS="-Doracle.jdbc.timezoneAsRegion=false"
 
 USER root
 
-ENV http_proxy http://172.16.11.90:8081 
-ENV https_proxy http://172.16.11.90:8081
-
 RUN apt-get update && apt-get install -y git 
 RUN apt-get install -y --force-yes maven
 
